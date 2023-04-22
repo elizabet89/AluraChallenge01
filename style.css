@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 2em;
+  color: white;
+  font-weight: lighter;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+}
+.container{
+  height: auto;
+  background-image: linear-gradient(180deg, #784398 0, #55317a 25%, #321f59 50%, #130d39 75%, #00001f 100%);
+}
+.header__h1{
+  font-size: 25px;
+  margin: 12px;
+}
+.main-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  
+}
+.main{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.ocultar{
+  display: none;
+}
+.encriptador{
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px rgb(203, 203, 203);
+  width: 700px;
+  height:450px;
+  border-radius: 20px;
+  
+}
+.encriptador__text:focus{
+  outline: none;
+}
+.nota,
+.mostrarTexto__span{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.8em;
+  color :white;
+  font-weight: lighter;
+  margin: 10px;
+}
+
+.encriptador__text{
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: 16px;
+  border:none;
+  padding: 30px;
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 300px;
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+.encriptador__btn{
+  margin-top: 10px;
+  border: none;
+  padding: 8px 35px;
+
+}
+.contenedor__btn{
+  text-align: center;
+}
+.mostrarTexto{
+  width: 340px;
+  height: 450px;
+  box-shadow: 0px 0px 10px rgb(203, 203, 203);
+  font-size: 16px;
+  padding: 30px 12px 50px 12px;
+  text-align: center;
+  border-radius: 20px;
+  
+}
+.nota{
+  display:block;
+}
+
+.mostrarTexto__img{
+  width: 180px;
+  margin-bottom: 20px;
+  
+}
+
+
+.mostrarTexto__encriptado{
+
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 10px 8px 5px 8px;
+  border: none;
+  outline: none;
+  margin-top: 8px;
+  font-size: 0.9em;
+  background-color: transparent;
+  color: white;
+  font-weight: lighter;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow:auto ;
+  text-align: center;
+
+
+}
+.mostrarTexto__encriptado::selection { /* deshabilita la selección del borde en otros navegadores */
+  border: none;
+}
+.mostrarTexto__encriptado::-webkit-scrollbar{
+  width: 8px;
+  background-color: transparent;
+}
+.mostrarTexto__encriptado::-webkit-scrollbar-thumb{
+  background-color:rgba(255, 255, 255, 0.105);
+}
+
+.mostrarTexto__mensaje {
+   font-size: 1.1em;
+   color: white;
+   width: 50%;
+   margin: auto;
+   margin-bottom: 5px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.text-cifrado{
+  font-size:1.1em;
+}
+.footer{
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.mostrarTexto__mensaje-encriptado{
+  color: white;
+  font-size: 1.2em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.encriptador__text::placeholder {
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+
+}
+
+.encriptador__btn{
+  background-color: #0a042e;
+  color: white;
+  border-radius: 50px;
+}
+
+.encriptador__btn:hover{
+background-color: #0a5dab;
+
+}
+.mostrarTexto__copy{
+  width: 25px;
+  margin-top: 8px;
+}
+.mostrarTexto__copy:hover{
+  cursor: pointer;
+
+}
+.mostrarTexto__span2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+@media(max-width: 1180px){
+  .main{
+    padding: 50px 30px;
+  }
+   .main-container{
+     flex-direction: column;
+     margin: 0 30px;
+   }
+  .mostrarTexto__img{
+    display: none;
+  }
+  .mostrarTexto{
+    width: 100%;
+   height: auto;
+   padding: 30px 12px 30px 12px;
+  }
+  .encriptador{
+    width: 100%;
+    height: 500px;
+    margin-right: 0;
+  
+  }
+  .contenedor__btn{
+    margin-top: 130px;
+    
+  }
+  .encriptador__text{
+    height: 250px;
+  }
+  .mostrarTexto__encriptado{
+
+    max-height: 400px;
+    padding: 20px;
+  }
+}
+@media(max-width: 459px){
+  .main{
+    padding: 50px 0px;
+  }
+.encriptador__btn{
+  display: block;
+  width: 100%;
+  padding: 13px 0;
+}
+.encriptador__text{
+  height: 300px;
+}
+.encriptador{
+  height: 600px;
+}
+}

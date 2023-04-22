@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENCRIPTADOR DE TEXTO</title>
+  <meta name="description" content="crear un ecriptador con html y js">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+  <header class="header">
+    <h1 class="header__h1">Sistema Encriptador de texto</h1>
+  </header>
+  <main class="main">
+    <div class="main-container">
+    <section class="encriptador">
+        <textarea id="encriptador__text" class="encriptador__text" name="texto" placeholder="Escribe algo aqui.." ></textarea>
+        <div class="contenedor__btn">
+          <small class="nota">No deben ser utilizados letras con acentos ni caracteres especiales</small>
+        <button id="encriptar" class="encriptador__btn">Encriptar</button>
+        <button id="desencriptar" class="encriptador__btn">Desencriptar</button>
+       </div>
+     </section>
+     <section class="mostrarTexto">
+        <img class="mostrarTexto__img" src="./img/logo.png" alt="logo de encriptar">   
+        <p  id="mostrarTexto__mensaje"class="mostrarTexto__mensaje ">Ningun Mensaje Encontrado</p>
+        <small id="mostrarTexto__span" class="mostrarTexto__span" >Ingrese el texto que desees encriptar</small>
+        <p id="mostrarTexto__mensaje-encriptado" class="mostrarTexto__mensaje-encriptado ocultar"> Texto Encriptado</p>
+        <textarea id="mostrarTexto__encriptado" class="mostrarTexto__encriptado ocultar"></textarea>
+        <img  id="icon_copy" class="mostrarTexto__copy ocultar" src="./img/copy-regular.svg" alt="copy-regular">
+         <p id="mostrarTexto__span2" class="mostrarTexto__span ocultar">Texto copiado</p>
+     </section>
+    </div>
+      
+  </main>
+  <footer class="footer">
+    <p><strong>Alura Challenge</strong>  </p>
+    <small>  Encriptador de Texto </small>
+    <small>copyright ©elizabeth Jimenez Saynes</small>
+  </footer>
+</div>
+  
+  <script src="./app.js"></script>
+</body>
+</html>
